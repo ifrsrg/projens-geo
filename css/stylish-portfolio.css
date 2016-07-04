@@ -4,7 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 /* Global Styles */
-
 html,
 body {
     width: 100%;
@@ -220,20 +219,8 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 20px 0;
 }
