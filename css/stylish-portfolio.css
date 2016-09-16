@@ -173,6 +173,12 @@ hr.small {
     padding: 50px 0;
 }
 
+.tablePrincipios ul li {
+    margin-left: 240px;
+    padding-right: 230px;
+    font-size: 18px;
+}
+
 .service-item {
     margin-bottom: 30px;
 }
