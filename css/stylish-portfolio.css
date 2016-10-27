@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 /* Global Styles */
+
 html,
 body {
     width: 100%;
@@ -173,12 +174,6 @@ hr.small {
     padding: 50px 0;
 }
 
-.tablePrincipios ul li {
-    margin-left: 240px;
-    padding-right: 230px;
-    font-size: 18px;
-}
-
 .service-item {
     margin-bottom: 30px;
 }
@@ -225,8 +220,46 @@ hr.small {
     margin: 10px;
 }
 
+#form {
+    width: 600px;
+    height: 470px;
+    margin: 75px 320px 50px 370px;
+}
+
+#form-button {
+    background-color: #337AB7;
+    color: #FFF;
+}
+
 /* Footer */
 
 footer {
-    padding: 20px 0;
+    padding: 50px 0;
+}
+
+.tablePrincipios ul li {
+    font-size: 21px;
+    margin-left: 220px;
+    padding-right: 220px;
+}
+
+#menu {
+    width: 1366px;
+    background-color: #337AB7;
+    font-size: 16px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#menu a:hover {
+    color: #337AB7;
+    background-color: #FFF;
+}
+
+#menu .navbar-header a:hover{
+    color: #fff;
+    background-color: #337AB7;
 }

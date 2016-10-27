@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>   
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/stylish-portfolio.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="menu">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Núcleo de Tecnologias Livres</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"> <a href="index.html">Home</a></li>
+				<li class="active"> <a href="projetos.html">Projetos</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="form">
+		<form enctype="multipart/form-data" action="recebe_upload.php" method="POST">
+			<div class="form-group">
+				<label for="autor">Digite o nome do autor: </label>
+				<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Autor">
+			</div>
+			<div class="form-group">
+				<label for="arquivo"> Digite o nome do arquivo </label>
+				<input type="text" class="form-control" id="arquivo" name="arquivo" placeholder="Nome do Arquivo"/>
+			</div>
+			<div class="form-group">
+				<label for="comentario"> Comentário sobre o arquivo </label>
+				<textarea class="form-control" placeholder="Comentário" name="comentario" rows="5" cols="25"></textarea> <br />
+			</div>
+			<div class="form-group">
+				<p> Escolha a área: 
+					<select name="area">
+						<option value="ensino"> Ensino </option>
+						<option value="pesquisa"> Pesquisa </option>
+						<option value="extensao"> Extensão </option>
+					</select>
+				</p>
+			</div>
+			<div class="form-group">
+				<label for="inputFile"> Escolha um arquivo: </label>
+				<input name="userfile" type="file" />
+			</div>
+			<button type="submit" id="form-button" class="btn btn-default"> Enviar arquivo </button>
+		</form>
+	</div>
+</body>
+</html>
