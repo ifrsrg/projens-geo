@@ -263,3 +263,24 @@ footer {
     color: #fff;
     background-color: #337AB7;
 }
+
+#ensino {
+    top: 250px;
+    left: 20px;
+    width: 433px;
+    position: absolute;
+}
+
+#extensao {
+    top: 250px;
+    left: 474px;
+    width: 433px;
+    position: absolute;
+}
+
+#pesquisa {
+    top: 250px;
+    left: 928px;
+    width: 433px;
+    position: absolute;
+}

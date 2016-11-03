@@ -1,15 +1,17 @@
 <?php
-	// definições de host, database, usuário e senha
+	
 	$host = "localhost";
-  	$db   = "ntl_web";
-  	$user = "root";
-  	$pass = "";
+	$db   = "ntl_web";
+	$user = "root";
+	$pass = "";
 
-	$link = new mysqli($host, $user, $pass, $db);// or trigger_error(mysql_error(),E_USER_ERROR);
+	$link = new mysqli($host, $user, $pass, $db);
 	if (mysqli_connect_errno()) trigger_error(mysqli_connect_error());  
 
-	$query = $link->query("SELECT * FROM uploads");
-	while ($r = $q->fetch_assoc()) {
-    	print_r($r);
+	$query = $link->query("SELECT titulo, area 
+						   FROM uploads
+						   WHERE area = '$area'");
+	while ($r = $query->fetch_assoc()) {
+		echo "<p>${r['titulo']}</p>";
 	}
 ?>
