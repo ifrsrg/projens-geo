@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Projetos - NTL</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	
 	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,25 +28,26 @@
 			</ul>
 		</div>
 	</div>
+	<img src="img/ntl.png" style="width: 500px; height: 220px; margin-left: 400px"> </img>
 	<div id="ensino"> 
 		<h4> Ensino </h4>
-		<a href="" name="ensino" value="ensino"
+		<a name="ensino" value="ensino">
 			<?php $area = 'ensino';
-			include("projetos_lista.php"); ?>>	 
+			include("projetos_lista.php"); ?> 
 		</a>
 	</div>
 	<div id="extensao">
 		<h4> Extensão </h4>
-		<a href="" name="extensao" value="extensao"
+		<a name="extensao" value="extensao">
 			<?php $area = 'extensao';
-			include("projetos_lista.php"); ?> >
+			include("projetos_lista.php"); ?>
 		</a>
 	</div>
 	<div id="pesquisa">
 		<h4> Pesquisa </h4>
-		<a href="" name="pesquisa" value="pesquisa"
+		<a name="pesquisa" value="pesquisa">
 			<?php $area = 'pesquisa';
-			include("projetos_lista.php"); ?> >
+			include("projetos_lista.php"); ?>
 		</a>
 	</div>
 </body>

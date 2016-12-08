@@ -41,18 +41,19 @@
   if (array_search($extensao, $extensoes) === false) {
     die("Por favor, envie arquivos com as seguintes extensões: doc, odt ou pdf");
   }
+  
+  $id = uniqid() . ".". $extensao;
 
   // Verifica se é possível mover o arquivo para a pasta escolhida
-  if (move_uploaded_file($_FILES['userfile']['tmp_name'], $dir. $nome_final)) {
-    $id = uniqid() . ".". $extensao;
+  if (move_uploaded_file($_FILES['userfile']['tmp_name'], $dir. $id)) {
     $data = date("Y-m-d");
     $autor = $_POST['nome'];
-    $arquivo = $nome_final;
+    $titulo = $nome_final;
     $comentario = $_POST['comentario'];
     $area = $_POST['area'];
   
     $query = "INSERT INTO uploads (id, data, autor, titulo, comentario, area) 
-    VALUES ('" . $id . "','" . $data . "','" . $autor . "','" . $arquivo . "','" . $comentario . "','" . $area . "')";
+    VALUES ('" . $id . "','" . $data . "','" . $autor . "','" . $titulo . "','" . $comentario . "','" . $area . "')";
 
     $stmt = $link->prepare($query);
     $stmt->execute();
