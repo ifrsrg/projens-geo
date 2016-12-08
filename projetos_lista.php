@@ -13,7 +13,20 @@
 						   WHERE area = '$area'");
 	while ($r = $query->fetch_assoc()) {
 		$arquivo = "uploads/${r['id']}";
-		echo "<a href=\"$arquivo\"> 
-			  	<p>${r['titulo']}</p> 
+		
+		$explode = explode('.', $arquivo);
+  		$end = end($explode);
+  		$extensao = strtolower($end);
+
+  		if ($extensao == 'pdf') {
+		echo "<a href=\"$arquivo\" target=\"_blank\"> 
+			  	 <p> ${r['titulo']} </p> 
 			  </a>";
+		} else {
+		echo "<p> ${r['titulo']} - 
+				<a href=\"$arquivo\"> 
+					Baixar	  
+		  	  	</a>
+		  	  </p>";
+		}
 	}
