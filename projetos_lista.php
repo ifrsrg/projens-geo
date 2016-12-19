@@ -20,13 +20,13 @@
 
   		if ($extensao == 'pdf') {
 		echo "<a href=\"$arquivo\" target=\"_blank\"> 
-			  	 <p> ${r['titulo']} </p> 
+			  	 <h4> ${r['titulo']} </h4> 
 			  </a>";
 		} else {
-		echo "<p> ${r['titulo']} - 
+		echo "<h4> ${r['titulo']} - 
 				<a href=\"$arquivo\"> 
 					Baixar	  
 		  	  	</a>
-		  	  </p>";
+		  	  </h4>";
 		}
 	}

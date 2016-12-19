@@ -28,27 +28,49 @@
 			</ul>
 		</div>
 	</div>
-	<img src="img/ntl.png" style="width: 500px; height: 220px; margin-left: 400px"> </img>
-	<div id="ensino"> 
-		<h4> Ensino </h4>
-		<a name="ensino" value="ensino">
-			<?php $area = 'ensino';
-			include("projetos_lista.php"); ?> 
-		</a>
+	<img src="img/ntl.png" style="width: 448px; height:292px; margin-left: 440px;"> </img>
+
+	<div class="container" style="left: 400px;">
+		<ul  class="nav nav-pills">
+			<li class="active">
+				<a href="#1a" data-toggle="tab"> <h4> Ensino </h4> </a>
+			</li>
+			<li>
+				<a href="#2a" data-toggle="tab"> <h4> Extensão </h4> </a>
+			</li>
+			<li>
+				<a href="#3a" data-toggle="tab"> <h4> Pesquisa </h4> </a>
+			</li>
+		</ul>
+
+		<div class="tab-content clearfix">
+			<div class="tab-pane active" id="1a">
+				<br />
+				<a name="ensino" value="ensino">
+					<?php $area = 'ensino';
+					include("projetos_lista.php"); ?> 
+				</a>
+			</div>
+			<div class="tab-pane" id="2a">
+				<br />
+				<a name="extensao" value="extensao">
+					<?php $area = 'extensao';
+					include("projetos_lista.php"); ?>
+				</a>
+			</div>
+			<div class="tab-pane" id="3a">
+				<br />
+				<a name="pesquisa" value="pesquisa">
+					<?php $area = 'pesquisa';
+					include("projetos_lista.php"); ?>
+				</a>
+			</div>
+		</div>
 	</div>
-	<div id="extensao">
-		<h4> Extensão </h4>
-		<a name="extensao" value="extensao">
-			<?php $area = 'extensao';
-			include("projetos_lista.php"); ?>
-		</a>
-	</div>
-	<div id="pesquisa">
-		<h4> Pesquisa </h4>
-		<a name="pesquisa" value="pesquisa">
-			<?php $area = 'pesquisa';
-			include("projetos_lista.php"); ?>
-		</a>
-	</div>
-</body>
-</html>
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
